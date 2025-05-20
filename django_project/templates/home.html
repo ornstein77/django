@@ -1,0 +1,9 @@
+<h1> доска объявлений</h1>
+<ul>
+  {% for post in post_list %}
+  <li>{{post.text}}</li>
+   <p><small>Автор: {{ post.author.username }}</small></p>
+   <p><small>Дата: {{ post.created_at }}</small></p>
+
+  {% endfor %}
+</ul>
